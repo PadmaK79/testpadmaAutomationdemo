@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.mipsdemo.base.TestBase;
 
-public class LoginPage extends TestBase{	
+public class LoginPage1 extends TestBase{	
 	
 	
 	@FindBy(id="username")
@@ -24,15 +24,9 @@ public class LoginPage extends TestBase{
 	private WebElement loginbutton;
 	
 	
-	/*
-	@FindBy(id="logo")
-	@CacheLookup
-	private WebElement saleforceLogo;
-	*/
-	
 	WebDriver driver;
 	
-	public LoginPage(WebDriver driver)	{
+	public LoginPage1(WebDriver driver)	{
 		PageFactory.initElements(driver, this);		
 		}	
 	
@@ -53,7 +47,6 @@ public class LoginPage extends TestBase{
 	public void setLoginCredentials(String username, String password) throws Exception {
 		try 
 		{
-		//	driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
 			username1.click();
 			username1.sendKeys(username);
 		//	driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
