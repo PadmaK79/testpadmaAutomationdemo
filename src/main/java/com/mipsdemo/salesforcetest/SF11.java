@@ -5,7 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-public class SF {
+public class SF11 {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
