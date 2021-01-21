@@ -12,7 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import com.mipsdemo.pageobject.LoginPage;
+import com.mipsdemo.pageobject.LoginPage1;
 /*
 public class LoginStepDefinition extends TestRunner{
 	

@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import com.mipsdemo.base.TestBase;
-import com.mipsdemo.pageobject.LoginPage;
+import com.mipsdemo.pageobject.LoginPage1;
 import com.mipsdemo.pageobject.RemindMeLaterPage;
 
 public class LoginStepDefinitionPF extends TestBase{
@@ -47,7 +47,7 @@ public class LoginStepDefinitionPF extends TestBase{
 	
 	@When("^User enters valid Login page details \"([^\"]*)\" \"([^\"]*)\"$")
 	public void user_enters_valid_Login_page_details(String username, String password) throws Exception {
-		LoginPage login= new LoginPage(driver);
+		LoginPage1 login= new LoginPage1(driver);
 		login.setLoginCredentials(username, password);
 
 		/*login.enterUserName(username);
@@ -57,7 +57,7 @@ public class LoginStepDefinitionPF extends TestBase{
 	
 	@When("^user clicks on Login button$")
 	public void user_clicks_on_Login_button() throws InterruptedException {
-		LoginPage login= new LoginPage(driver);
+		LoginPage1 login= new LoginPage1(driver);
 		login.clicklogin();
 	}
 	
